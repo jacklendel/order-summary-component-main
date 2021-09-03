@@ -12,7 +12,7 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     background-image: url(../images/pattern-background-mobile.svg);
     background-color: hsl(225, 100%, 94%);
-    background-repeat: no-repeat;  
+    background-repeat:repeat-x;  
     text-align: center;
 }
 
@@ -39,17 +39,19 @@ h1 {
 }
 
 .conteudo {
+    width: 80%;
     color:hsl(224, 23%, 55%);
-    line-height: 20px;
-    font-weight: 500;
-    margin-bottom: 30px;
+    line-height: 25px;
+    font-weight: 500;;
+    margin: 0 auto 30px auto;
+    
 
 }
 
 ul {
     background-color: hsla(229, 15%, 86%, 0.233);
     border-radius: 15px;
-    margin: 0 15px 30px 0;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,15 +82,54 @@ ul li a {
 
 }
 
+ul li a:hover {
+    color: hsl(224, 23%, 55%);
+
+}
+
 .botao {
+    display: block;
     width: 85%;
     background-color: hsl(245, 75%, 52%);
     border-radius: 10px;
     margin: 0 auto;
+    box-shadow:-2px 4px 8px 0px #423d3d6b;
+}
+
+.botao:hover {
+    background-color: hsl(224, 23%, 55%);
 }
 
 .botao p {
     color: #fff;
     font-weight: 700;
     padding: 15px 0;
+
 }
+
+.order {
+    display: block;
+    color:hsl(224, 23%, 55%);
+    line-height: 20px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.order:hover {
+    color: hsl(223, 47%, 23%);
+
+}
+
+@media (min-width: 450px) {
+
+    body {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+
+    .container {
+        width: 450px;
+    }
+    
+}
+
+
